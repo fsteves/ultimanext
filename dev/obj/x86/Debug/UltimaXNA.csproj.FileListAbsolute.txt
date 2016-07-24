@@ -1,0 +1,11 @@
+P:\Tools\uo\UltimaXNA\dev\bin\Debug\Data\credits.txt
+P:\Tools\uo\UltimaXNA\dev\bin\Debug\LICENSE.txt
+P:\Tools\uo\UltimaXNA\dev\bin\Debug\zlib32.dll
+P:\Tools\uo\UltimaXNA\dev\bin\Debug\Data\bodytable.cfg
+P:\Tools\uo\UltimaXNA\dev\bin\Debug\Data\containers.cfg
+P:\Tools\uo\UltimaXNA\dev\bin\Debug\Content\Shaders\IsometricWorld.xnb
+P:\Tools\uo\UltimaXNA\dev\bin\Debug\UltimaXNA.exe
+P:\Tools\uo\UltimaXNA\dev\bin\Debug\UltimaXNA.pdb
+P:\Tools\uo\UltimaXNA\dev\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+P:\Tools\uo\UltimaXNA\dev\obj\x86\Debug\UltimaXNA.exe
+P:\Tools\uo\UltimaXNA\dev\obj\x86\Debug\UltimaXNA.pdb

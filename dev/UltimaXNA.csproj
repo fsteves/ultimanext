@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{205E21C9-4A74-4B0F-BDA0-270A38A0C4EA}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UltimaXNA</RootNamespace>
+    <AssemblyName>UltimaXNA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaCrossPlatformGroupID>50bfd68f-b3c7-4d72-866a-2cf8c22b84b0</XnaCrossPlatformGroupID>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <Thumbnail>
+    </Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>
+    </StartupObject>
+    <XnaUpgrade>
+    </XnaUpgrade>
+    <XnaOutputType>Game</XnaOutputType>
+    <XnaProfile>Reach</XnaProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.1.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>True</XnaCompressContent>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\AudioSettings.cs" />
+    <Compile Include="Configuration\GumpSettings.cs" />
+    <Compile Include="Ultima\Input\Macro.cs" />
+    <Compile Include="Ultima\Input\MacroArmDisarm.cs" />
+    <Compile Include="Ultima\Input\MacroDefinition.cs" />
+    <Compile Include="Ultima\Input\MacroDisplay.cs" />
+    <Compile Include="Ultima\Input\Action.cs" />
+    <Compile Include="Ultima\Input\MacroEngine.cs" />
+    <Compile Include="Ultima\Input\PlayerMacros.cs" />
+    <Compile Include="Ultima\Input\Macros.cs" />
+    <Compile Include="Ultima\Input\MacroType.cs" />
+    <Compile Include="Configuration\Properties\MouseProperty.cs" />
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Configuration\Properties\SavedGumpProperty.cs" />
+    <Compile Include="Configuration\UserInterfaceSettings.cs" />
+    <Compile Include="Core\Audio\ASound.cs" />
+    <Compile Include="Core\ComponentModel\EqualityHelper.cs" />
+    <Compile Include="Core\ComponentModel\NotifyPropertyChangedBase.cs" />
+    <Compile Include="Configuration\Properties\ResolutionProperty.cs" />
+    <Compile Include="Core\Configuration\SettingsFile.cs" />
+    <Compile Include="Core\Configuration\TextSettingsFileWriter.cs" />
+    <Compile Include="Core\Diagnostics\EventLevels.cs" />
+    <Compile Include="Core\Diagnostics\HighPerformanceTimer.cs" />
+    <Compile Include="Core\Diagnostics\Listeners\AEventListener.cs" />
+    <Compile Include="Core\Diagnostics\Listeners\MsgBoxOnCriticalListener.cs" />
+    <Compile Include="Core\Diagnostics\Profiler.cs" />
+    <Compile Include="Core\DpiManager.cs" />
+    <Compile Include="Core\Extensions\ColorExtensions.cs" />
+    <Compile Include="Core\Extensions\PointExtensions.cs" />
+    <Compile Include="Core\Extensions\StringExtensions.cs" />
+    <Compile Include="Core\Graphics\Techniques.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Buffer16BitStereo.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\ABuffer.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\BitReserve.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Bitstream.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\BitstreamErrors.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\BitstreamException.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\CircularByteBuffer.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Crc16.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoder.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\DecoderErrors.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\DecoderException.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\ASubband.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\IFrameDecoder.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerIDecoder.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerIIDecoder.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerIIIDecoder.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerIII\ChannelData.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerIII\GranuleInfo.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerIII\Layer3SideInfo.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerIII\SBI.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerIII\ScaleFactorData.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerIII\ScaleFactorTable.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerII\SubbandLayer2.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerII\SubbandLayer2IntensityStereo.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerII\SubbandLayer2Stereo.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerI\SubbandLayer1.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerI\SubbandLayer1IntensityStereo.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Decoders\LayerI\SubbandLayer1Stereo.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Equalizer.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Header.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\Huffman.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\OutputChannels.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\OutputChannelsEnum.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\PushbackStream.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\SampleBuffer.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Decoding\SynthesisFilter.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\IO\RandomAccessFileStream.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\IO\RiffFile.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\IO\WaveFile.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\IO\WaveFileBuffer.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\MP3SharpException.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\MP3Stream.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\SoundFormat.cs" />
+    <Compile Include="Core\Audio\MP3Sharp\Support\SupportClass.cs" />
+    <Compile Include="Core\Input\KeyboardEvent.cs" />
+    <Compile Include="Core\Input\MouseButton.cs" />
+    <Compile Include="Core\Input\MouseEvent.cs" />
+    <Compile Include="Core\IO\BufferPool.cs" />
+    <Compile Include="Core\Resolutions.cs" />
+    <Compile Include="Core\Windows\CultureHandler.cs" />
+    <Compile Include="Core\Windows\WinMouseButtons.cs" />
+    <Compile Include="Core\Windows\NativeConstants.cs" />
+    <Compile Include="Core\Windows\NativeMethods.cs" />
+    <Compile Include="Core\Network\INetworkClient.cs" />
+    <Compile Include="Core\DelayedAction.cs" />
+    <Compile Include="Core\Patterns\IModule.cs" />
+    <Compile Include="Core\Resources\IAnimationFrame.cs" />
+    <Compile Include="Core\Resources\IResource.cs" />
+    <Compile Include="Core\UI\ControlMetaData.cs" />
+    <Compile Include="Core\UI\HTML\HtmlDocument_OldCode.cs" />
+    <Compile Include="Core\UI\HTML\HtmlImage.cs" />
+    <Compile Include="Core\UI\HTML\Elements\BlockElement.cs" />
+    <Compile Include="Core\UI\HTML\HtmlDocument.cs" />
+    <Compile Include="Core\UI\HTML\HtmlLink.cs" />
+    <Compile Include="Core\UI\HTML\Styles\OpenTag.cs" />
+    <Compile Include="Core\UI\HTML\Styles\StyleParser.cs" />
+    <Compile Include="Core\UI\HTML\Styles\StyleState.cs" />
+    <Compile Include="Core\UI\HTML\Styles\StyleValue.cs" />
+    <Compile Include="Core\UI\Interfaces\ICharacter.cs" />
+    <Compile Include="Core\UI\Interfaces\ICursor.cs" />
+    <Compile Include="Core\UI\Interfaces\IFont.cs" />
+    <Compile Include="Core\Resources\IResourceProvider.cs" />
+    <Compile Include="Core\PluginManager.cs" />
+    <Compile Include="Core\UI\RenderedTextList.cs" />
+    <Compile Include="Core\UI\RenderedText.cs" />
+    <Compile Include="Disposable.cs" />
+    <Compile Include="ServiceRegistry.cs" />
+    <Compile Include="Core\Audio\AudioEffects.cs" />
+    <Compile Include="Ultima\Audio\AudioService.cs" />
+    <Compile Include="Ultima\Audio\UOMusic.cs" />
+    <Compile Include="Ultima\Audio\UOSound.cs" />
+    <Compile Include="Core\Audio\VolumeState.cs" />
+    <Compile Include="Ultima\AUltimaModel.cs" />
+    <Compile Include="Configuration\DebugSettings.cs" />
+    <Compile Include="Configuration\EngineSettings.cs" />
+    <Compile Include="Configuration\LoginSettings.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Core\Configuration\ASettingsSection.cs" />
+    <Compile Include="Configuration\UltimaOnlineSettings.cs" />
+    <Compile Include="Core\ConsoleManager.cs" />
+    <Compile Include="Core\Input\InputManager.cs" />
+    <Compile Include="Core\Windows\WinKeys.cs" />
+    <Compile Include="Core\Input\InputEvent.cs" />
+    <Compile Include="Core\Input\InputEventKeyboard.cs" />
+    <Compile Include="Core\Input\InputEventMouse.cs" />
+    <Compile Include="Core\Windows\Message.cs" />
+    <Compile Include="Core\Windows\MessageHook.cs" />
+    <Compile Include="Core\IO\AsyncWriter.cs" />
+    <Compile Include="Core\IO\BinaryFileReader.cs" />
+    <Compile Include="Core\IO\BinaryFileWriter.cs" />
+    <Compile Include="Core\IO\GenericReader.cs" />
+    <Compile Include="Core\IO\GenericWriter.cs" />
+    <Compile Include="Core\Windows\WndProc.cs" />
+    <Compile Include="Core\Patterns\MVC\AController.cs" />
+    <Compile Include="Core\Patterns\MVC\AModel.cs" />
+    <Compile Include="Core\Patterns\MVC\AView.cs" />
+    <Compile Include="Core\Diagnostics\Guard.cs" />
+    <Compile Include="Core\Diagnostics\Tracing\ITracer.cs" />
+    <Compile Include="Core\Diagnostics\Listeners\ConsoleOutputEventListener.cs" />
+    <Compile Include="Core\Diagnostics\Listeners\DebugOutputEventListener.cs" />
+    <Compile Include="Core\Diagnostics\Listeners\FileLogEventListener.cs" />
+    <Compile Include="Core\Diagnostics\Listeners\StreamOuputEventListener.cs" />
+    <Compile Include="Core\Diagnostics\Tracing\Tracer.cs" />
+    <Compile Include="Core\Diagnostics\GeneralExceptionHandler.cs" />
+    <Compile Include="Ultima\Data\Body.cs" />
+    <Compile Include="Ultima\Data\Chairs.cs" />
+    <Compile Include="Ultima\Data\ChatMode.cs" />
+    <Compile Include="Ultima\Data\ItemInContainer.cs" />
+    <Compile Include="Ultima\Data\ContextMenuItem.cs" />
+    <Compile Include="Ultima\Data\HouseRevisionState.cs" />
+    <Compile Include="Ultima\Data\Hues.cs" />
+    <Compile Include="Ultima\Data\SpellsMagery.cs" />
+    <Compile Include="Core\Data\Pair.cs" />
+    <Compile Include="Ultima\Data\Races.cs" />
+    <Compile Include="Ultima\Data\Reagents.cs" />
+    <Compile Include="Ultima\Data\Seasons.cs" />
+    <Compile Include="Ultima\Data\Genders.cs" />
+    <Compile Include="Ultima\Data\SpellbookData.cs" />
+    <Compile Include="Ultima\Data\SpellDefinition.cs" />
+    <Compile Include="Ultima\Data\ClientVersion.cs" />
+    <Compile Include="Ultima\Network\Server\MobileAnimationPacketSA.cs" />
+    <Compile Include="Ultima\Network\Server\ObjectInfoPacketSA.cs" />
+    <Compile Include="Ultima\Resources\AnimationFrame.cs" />
+    <Compile Include="Ultima\Resources\ArtMulResource.cs" />
+    <Compile Include="Ultima\Resources\BodyDef.cs" />
+    <Compile Include="Ultima\Resources\EffectData.cs" />
+    <Compile Include="Ultima\Resources\Fonts\CharacterAscii.cs" />
+    <Compile Include="Ultima\Resources\Fonts\FontAscii.cs" />
+    <Compile Include="Ultima\IO\AFileIndex.cs" />
+    <Compile Include="Ultima\IO\FileIndexEntry3D.cs" />
+    <Compile Include="Ultima\IO\MulFileIndex.cs" />
+    <Compile Include="Ultima\IO\UopFileIndex.cs" />
+    <Compile Include="Ultima\Network\Client\CastSpellPacket.cs" />
+    <Compile Include="Ultima\Network\Client\ClientPingPacket.cs" />
+    <Compile Include="Ultima\Network\Client\GuildGumpRequestPacket.cs" />
+    <Compile Include="Ultima\Network\Client\QuestGumpRequestPacket.cs" />
+    <Compile Include="Ultima\Network\Client\SellItemsPacket.cs" />
+    <Compile Include="Ultima\Network\Server\ServerPingPacket.cs" />
+    <Compile Include="Ultima\Resources\GumpDefTranslator.cs" />
+    <Compile Include="Ultima\UI\Controls\AGumpPic.cs" />
+    <Compile Include="Ultima\UI\Controls\ColorPickerBox.cs" />
+    <Compile Include="Ultima\UI\Controls\EquipmentSlot.cs" />
+    <Compile Include="Ultima\UI\Controls\GumpPicWithWidth.cs" />
+    <Compile Include="Ultima\UI\Controls\KeyPressControl.cs" />
+    <Compile Include="Ultima\UI\Controls\MacroDropDownList.cs" />
+    <Compile Include="Ultima\UI\LoginGumps\CreditsGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\ContextMenuGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\LogoutGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\MobileHealthTrackerGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\OptionsGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\UseSpellButtonGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\VendorBuyGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\VendorSellGump.cs" />
+    <Compile Include="Ultima\World\Entities\Items\Containers\SpellBook.cs" />
+    <Compile Include="Ultima\Data\SpellBookTypes.cs" />
+    <Compile Include="Ultima\Data\StatLocks.cs" />
+    <Compile Include="Ultima\Player\SpellData.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\SpellbookGump.cs" />
+    <Compile Include="Ultima\World\Direction.cs" />
+    <Compile Include="Ultima\Data\MessageTypes.cs" />
+    <Compile Include="Ultima\Data\TileFlags.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\Animations\ActionIndexes.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\MobileMoveEvent.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\MobileMoveEvents.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\MobileSounds.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\MovementSpeed.cs" />
+    <Compile Include="Ultima\Resources\StaticTile.cs" />
+    <Compile Include="Ultima\Login\LoginModel.cs" />
+    <Compile Include="Ultima\Network\Client\SetSkillLockPacket.cs" />
+    <Compile Include="Ultima\Network\Client\UOSEKeepAlivePacket.cs" />
+    <Compile Include="Ultima\Player\PlayerState.cs" />
+    <Compile Include="Ultima\Player\Quest.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\CurrentMaxValue.cs" />
+    <Compile Include="Ultima\Resources\EffectDataResource.cs" />
+    <Compile Include="Ultima\IO\VerData.cs" />
+    <Compile Include="Ultima\World\Entities\Effects\AEffect.cs" />
+    <Compile Include="Ultima\World\Entities\Effects\AnimatedItemEffect.cs" />
+    <Compile Include="Ultima\World\Entities\Effects\LightningEffect.cs" />
+    <Compile Include="Ultima\World\Entities\Effects\MovingEffect.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\Animations\ActionTranslator.cs" />
+    <Compile Include="Ultima\World\EntityViews\AEntityView.cs" />
+    <Compile Include="Ultima\World\EntityViews\AnimatedItemEffectView.cs" />
+    <Compile Include="Ultima\World\EntityViews\LightningEffectView.cs" />
+    <Compile Include="Ultima\World\EntityViews\DeferredView.cs" />
+    <Compile Include="Ultima\World\EntityViews\MovingEffectView.cs" />
+    <Compile Include="Ultima\World\EntityViews\OverheadView.cs" />
+    <Compile Include="Ultima\World\Entities\DeferredEntity.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\MobileFlags.cs" />
+    <Compile Include="Core\UI\Fonts\AFont.cs" />
+    <Compile Include="Ultima\Data\FeatureFlags.cs" />
+    <Compile Include="Core\UI\Interfaces\IScrollBar.cs" />
+    <Compile Include="Ultima\UI\Controls\ScrollFlag.cs" />
+    <Compile Include="Ultima\UI\Controls\CheckBox.cs" />
+    <Compile Include="Ultima\UI\Controls\RadioButton.cs" />
+    <Compile Include="Ultima\UI\GumpBuilder.cs" />
+    <Compile Include="Ultima\ResourceProvider.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\SplitItemStackGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\UseSkillButtonGump.cs" />
+    <Compile Include="Ultima\UI\Controls\WorldViewport.cs" />
+    <Compile Include="Core\UI\UILayer.cs" />
+    <Compile Include="Ultima\UI\Tooltip.cs" />
+    <Compile Include="Core\UI\HTML\Elements\AElement.cs" />
+    <Compile Include="Core\UI\HTML\Elements\CharacterElement.cs" />
+    <Compile Include="Core\UI\HTML\Elements\ImageElement.cs" />
+    <Compile Include="Core\UI\HTML\EscapeCharacters.cs" />
+    <Compile Include="Core\UI\HTML\Parsing\DynaString.cs" />
+    <Compile Include="Core\UI\HTML\Parsing\FastHash.cs" />
+    <Compile Include="Core\UI\HTML\Parsing\HTMLchunk.cs" />
+    <Compile Include="Core\UI\HTML\Parsing\HTMLentities.cs" />
+    <Compile Include="Core\UI\HTML\Parsing\HTMLheuristics.cs" />
+    <Compile Include="Core\UI\HTML\Parsing\HTMLparser.cs" />
+    <Compile Include="Core\UI\HTML\Parsing\TagParser.cs" />
+    <Compile Include="Core\UI\Fonts\ACharacter.cs" />
+    <Compile Include="Ultima\Resources\Fonts\CharacterUnicode.cs" />
+    <Compile Include="Ultima\Resources\Fonts\FontUnicode.cs" />
+    <Compile Include="Ultima\Resources\FontsResource.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\JournalGump.cs" />
+    <Compile Include="Ultima\Player\JournalData.cs" />
+    <Compile Include="Ultima\Login\LoginClient.cs" />
+    <Compile Include="Ultima\World\Input\MousePicking.cs" />
+    <Compile Include="Ultima\World\Input\PickType.cs" />
+    <Compile Include="Ultima\World\Managers\EffectManager.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\WorldViewGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\YouAreDeadGump.cs" />
+    <Compile Include="Ultima\World\Maps\TileSorter.cs" />
+    <Compile Include="Ultima\World\EntityViews\GroundView.cs" />
+    <Compile Include="Ultima\World\EntityViews\ItemView.cs" />
+    <Compile Include="Ultima\World\EntityViews\MobileView.cs" />
+    <Compile Include="Ultima\World\Entities\Ground.cs" />
+    <Compile Include="Ultima\World\Entities\Items\StaticItem.cs" />
+    <Compile Include="Ultima\Resources\BodyData.cs" />
+    <Compile Include="Ultima\UI\Controls\GumpPicBackpack.cs" />
+    <Compile Include="Core\UI\HuedTexture.cs" />
+    <Compile Include="Ultima\UI\UltimaCursor.cs" />
+    <Compile Include="Ultima\World\WorldInteraction.cs" />
+    <Compile Include="Ultima\Login\LoginClientStatus.cs" />
+    <Compile Include="Ultima\Login\LoginView.cs" />
+    <Compile Include="Ultima\Login\Accounts\CharacterListEntry.cs" />
+    <Compile Include="Ultima\Login\Accounts\Characters.cs" />
+    <Compile Include="Ultima\Login\Servers\ServerListEntry.cs" />
+    <Compile Include="Ultima\Login\Servers\Servers.cs" />
+    <Compile Include="Ultima\Data\Features.cs" />
+    <Compile Include="Ultima\Player\SkillData.cs" />
+    <Compile Include="Ultima\Player\StatLockData.cs" />
+    <Compile Include="Ultima\Network\Client\AsciiSpeechPacket.cs" />
+    <Compile Include="Ultima\Network\Client\AttackRequestPacket.cs" />
+    <Compile Include="Ultima\Network\Client\BuyItemsPacket.cs" />
+    <Compile Include="Ultima\Network\Client\ClientVersionPacket.cs" />
+    <Compile Include="Ultima\Network\Client\CreateCharacterPacket.cs" />
+    <Compile Include="Ultima\Network\Client\DeleteCharacterPacket.cs" />
+    <Compile Include="Ultima\Network\Client\DisconnectNotificationPacket.cs" />
+    <Compile Include="Ultima\Network\Client\DoubleClickPacket.cs" />
+    <Compile Include="Ultima\Network\Client\DropItemPacket.cs" />
+    <Compile Include="Ultima\Network\Client\DropToLayerPacket.cs" />
+    <Compile Include="Ultima\Network\Client\GameLoginPacket.cs" />
+    <Compile Include="Ultima\Network\Client\GeneralInformationPackets.cs" />
+    <Compile Include="Ultima\Network\Client\MobileQueryPacket.cs" />
+    <Compile Include="Ultima\Network\Client\GumpMenuSelectPacket.cs" />
+    <Compile Include="Ultima\Network\Client\GumpTextEntryDialogReplyPacket.cs" />
+    <Compile Include="Ultima\Network\Client\LoginCharacterPacket.cs" />
+    <Compile Include="Ultima\Network\Client\LoginPacket.cs" />
+    <Compile Include="Ultima\Network\Client\MoveRequestPacket.cs" />
+    <Compile Include="Ultima\Network\Client\PathfindingPacket.cs" />
+    <Compile Include="Ultima\Network\Client\PickupItemPacket.cs" />
+    <Compile Include="Ultima\Network\Client\QueryPropertiesPacket.cs" />
+    <Compile Include="Ultima\Network\Client\RenameCharacterPacket.cs" />
+    <Compile Include="Ultima\Network\Client\RequestHelpPacket.cs" />
+    <Compile Include="Ultima\Network\Client\RequestNamePacket.cs" />
+    <Compile Include="Ultima\Network\Client\RequestNoticePacket.cs" />
+    <Compile Include="Ultima\Network\Client\RequestSkillUsePacket.cs" />
+    <Compile Include="Ultima\Network\Client\RequestTipPacket.cs" />
+    <Compile Include="Ultima\Network\Client\RequestWarModePacket.cs" />
+    <Compile Include="Ultima\Network\Client\ResponseToDialogBoxPacket.cs" />
+    <Compile Include="Ultima\Network\Client\SeedPacket.cs" />
+    <Compile Include="Ultima\Network\Client\SelectServerPacket.cs" />
+    <Compile Include="Ultima\Network\Client\SellListReplyPacket.cs" />
+    <Compile Include="Ultima\Network\Client\SingleClickPacket.cs" />
+    <Compile Include="Ultima\Network\Client\TalkRequestPacket.cs" />
+    <Compile Include="Ultima\Network\Client\TargetCancelPacket.cs" />
+    <Compile Include="Ultima\Network\Client\TargetObjectPacket.cs" />
+    <Compile Include="Ultima\Network\Client\TargetXYZPacket.cs" />
+    <Compile Include="Ultima\Network\Client\UnicodeSpeechPacket.cs" />
+    <Compile Include="Ultima\Network\Client\UOGInfoRequestPacket.cs" />
+    <Compile Include="Ultima\World\WorldClient.cs" />
+    <Compile Include="Ultima\Data\ContextMenuData.cs" />
+    <Compile Include="Ultima\Network\Server\CharacterListUpdatePacket.cs" />
+    <Compile Include="Ultima\Network\Incomplete\DisplayGumpFastPacket.cs" />
+    <Compile Include="Ultima\Network\Incomplete\DisplayMenuPacket.cs" />
+    <Compile Include="Ultima\Network\Incomplete\Extended0x78Packet.cs" />
+    <Compile Include="Ultima\Network\Server\GraphicEffectPacket.cs" />
+    <Compile Include="Ultima\Network\Incomplete\InvalidMapEnablePacket.cs" />
+    <Compile Include="Ultima\Network\Server\MessageLocalizedAffixPacket.cs" />
+    <Compile Include="Ultima\Network\Incomplete\ObjectHelpResponsePacket.cs" />
+    <Compile Include="Ultima\Network\Incomplete\OpenPaperdollPacket.cs" />
+    <Compile Include="Ultima\Network\Server\PlayMusicPacket.cs" />
+    <Compile Include="Ultima\Network\Incomplete\QuestArrowPacket.cs" />
+    <Compile Include="Ultima\Network\Incomplete\ResurrectionMenuPacket.cs" />
+    <Compile Include="Ultima\Network\Server\SendSkillsPacket.cs" />
+    <Compile Include="Ultima\Network\Server\TimePacket.cs" />
+    <Compile Include="Ultima\Network\Incomplete\TipNoticeWindowPacket.cs" />
+    <Compile Include="Ultima\Network\Server\VendorSellListPacket.cs" />
+    <Compile Include="Core\Network\Packets\RevcPacket.cs" />
+    <Compile Include="Core\Network\Packets\SendPacket.cs" />
+    <Compile Include="Core\Network\Packets\SendRecvPacket.cs" />
+    <Compile Include="Ultima\Network\Server\AsciiMessagePacket.cs" />
+    <Compile Include="Ultima\Network\Server\ChangeCombatantPacket.cs" />
+    <Compile Include="Ultima\Network\Server\CharacterCityListPacket.cs" />
+    <Compile Include="Ultima\Network\Server\ChatPacket.cs" />
+    <Compile Include="Ultima\Network\Server\CompressedGumpPacket.cs" />
+    <Compile Include="Ultima\Network\Server\ContainerContentPacket.cs" />
+    <Compile Include="Ultima\Network\Server\AddSingleItemToContainerPacket.cs" />
+    <Compile Include="Ultima\Network\Server\ContainerPacket.cs" />
+    <Compile Include="Ultima\Network\Server\CorpseClothingPacket.cs" />
+    <Compile Include="Ultima\Network\Server\CustomHousePacket.cs" />
+    <Compile Include="Ultima\Network\Server\DamagePacket.cs" />
+    <Compile Include="Ultima\Network\Server\DeathAnimationPacket.cs" />
+    <Compile Include="Ultima\Network\Server\DeleteResultPacket.cs" />
+    <Compile Include="Ultima\Network\Server\DragEffectPacket.cs" />
+    <Compile Include="Ultima\Network\Server\EquipmentEntry.cs" />
+    <Compile Include="Ultima\Network\Server\GeneralInfoPacket.cs" />
+    <Compile Include="Ultima\Network\Server\GlobalQueueCountPacket.cs" />
+    <Compile Include="Ultima\Network\Server\LiftRejectionPacket.cs" />
+    <Compile Include="Ultima\Network\Server\LoginCompletePacket.cs" />
+    <Compile Include="Ultima\Network\Server\LoginConfirmPacket.cs" />
+    <Compile Include="Ultima\Network\Server\LoginRejectionPacket.cs" />
+    <Compile Include="Ultima\Network\Server\MessageLocalizedPacket.cs" />
+    <Compile Include="Ultima\Network\Server\MobileAnimationPacket.cs" />
+    <Compile Include="Ultima\Network\Server\MobileAttributesPacket.cs" />
+    <Compile Include="Ultima\Network\Server\MobileIncomingPacket.cs" />
+    <Compile Include="Ultima\Network\Server\MobileMovingPacket.cs" />
+    <Compile Include="Ultima\Network\Server\MobileUpdatePacket.cs" />
+    <Compile Include="Ultima\Network\Server\MoveAcknowledgePacket.cs" />
+    <Compile Include="Ultima\Network\Server\MovementRejectPacket.cs" />
+    <Compile Include="Ultima\Network\Server\ObjectInfoPacket.cs" />
+    <Compile Include="Ultima\Network\Server\ObjectPropertyListPacket.cs" />
+    <Compile Include="Ultima\Network\Server\ObjectPropertyListUpdatePacket.cs" />
+    <Compile Include="Ultima\Network\Server\OpenWebBrowserPacket.cs" />
+    <Compile Include="Ultima\Network\Server\OverallLightLevelPacket.cs" />
+    <Compile Include="Ultima\Network\Server\PersonalLightLevelPacket.cs" />
+    <Compile Include="Ultima\Network\Server\PlayerMovePacket.cs" />
+    <Compile Include="Ultima\Network\Server\PlaySoundEffectPacket.cs" />
+    <Compile Include="Ultima\Network\Server\PopupMessagePacket.cs" />
+    <Compile Include="Ultima\Network\Server\RemoveEntityPacket.cs" />
+    <Compile Include="Ultima\Network\Server\RequestNameResponsePacket.cs" />
+    <Compile Include="Ultima\Network\Server\SeasonChangePacket.cs" />
+    <Compile Include="Ultima\Network\Server\ServerListPacket.cs" />
+    <Compile Include="Ultima\Network\Server\ServerRelayPacket.cs" />
+    <Compile Include="Ultima\Network\Server\StatusInfoPacket.cs" />
+    <Compile Include="Ultima\Network\Server\SubServerPacket.cs" />
+    <Compile Include="Ultima\Network\Server\SupportedFeaturesPacket.cs" />
+    <Compile Include="Ultima\Network\Server\SwingPacket.cs" />
+    <Compile Include="Ultima\Network\Server\TargetCursorMulti.cs" />
+    <Compile Include="Ultima\Network\Server\TargetCursorPacket.cs" />
+    <Compile Include="Ultima\Network\Server\UnicodeMessagePacket.cs" />
+    <Compile Include="Ultima\Network\Server\UOGInfoResponsePacket.cs" />
+    <Compile Include="Ultima\Network\Server\UpdateHealthPacket.cs" />
+    <Compile Include="Ultima\Network\Server\UpdateManaPacket.cs" />
+    <Compile Include="Ultima\Network\Server\UpdateStaminaPacket.cs" />
+    <Compile Include="Ultima\Network\Server\VendorBuyListPacket.cs" />
+    <Compile Include="Ultima\Network\Server\VersionRequestPacket.cs" />
+    <Compile Include="Ultima\Network\Server\WarModePacket.cs" />
+    <Compile Include="Ultima\Network\Server\WeatherPacket.cs" />
+    <Compile Include="Ultima\Network\Server\WornItemPacket.cs" />
+    <Compile Include="Ultima\Resources\ContainerData.cs" />
+    <Compile Include="Ultima\World\CustomHousing.cs" />
+    <Compile Include="Ultima\Data\HairStyles.cs" />
+    <Compile Include="Ultima\Resources\ParticleData.cs" />
+    <Compile Include="Ultima\Resources\SkillsData.cs" />
+    <Compile Include="Ultima\Resources\SpeechData.cs" />
+    <Compile Include="Ultima\Resources\TileMatrixData.cs" />
+    <Compile Include="Ultima\World\Input\WorldInput.cs" />
+    <Compile Include="Core\UI\HTML\HtmlLinkList.cs" />
+    <Compile Include="Core\UI\HTML\Styles\Enums.cs" />
+    <Compile Include="Core\UI\HTML\HtmlImageList.cs" />
+    <Compile Include="Core\Diagnostics\Metrics.cs" />
+    <Compile Include="Ultima\Resources\GumpMulResource.cs" />
+    <Compile Include="Ultima\Resources\MobtypeData.cs" />
+    <Compile Include="Ultima\Resources\MultiData.cs" />
+    <Compile Include="Ultima\Resources\MusicData.cs" />
+    <Compile Include="Ultima\Resources\RadarColorData.cs" />
+    <Compile Include="Ultima\Resources\SoundData.cs" />
+    <Compile Include="Ultima\Resources\ClilocResource.cs" />
+    <Compile Include="UltimaGame.cs" />
+    <Compile Include="Ultima\IO\FileManager.cs" />
+    <Compile Include="Ultima\World\Entities\Items\Containers\Container.cs" />
+    <Compile Include="Ultima\World\Entities\Items\Containers\Corpse.cs" />
+    <Compile Include="Ultima\World\Entities\AEntity.cs" />
+    <Compile Include="Ultima\World\Managers\EntityManager.cs" />
+    <Compile Include="Ultima\World\Position3D.cs" />
+    <Compile Include="Ultima\World\Entities\Items\Item.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\Mobile.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\Animations\MobileAnimation.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\MobileEquipment.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\MobileMovement.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\MobileMovementCheck.cs" />
+    <Compile Include="Ultima\World\Entities\Multis\Multi.cs" />
+    <Compile Include="Ultima\World\Entities\Overhead.cs" />
+    <Compile Include="Ultima\World\Entities\PropertyList.cs" />
+    <Compile Include="Ultima\Login\States\CharacterListState.cs" />
+    <Compile Include="Ultima\Login\States\CreateCharacterState.cs" />
+    <Compile Include="Ultima\Login\States\LoggingInState.cs" />
+    <Compile Include="Ultima\Login\States\SelectServerState.cs" />
+    <Compile Include="Ultima\World\Maps\MapChunk.cs" />
+    <Compile Include="Ultima\World\Managers\StaticManager.cs" />
+    <Compile Include="Ultima\World\WorldViews\IsometricLighting.cs" />
+    <Compile Include="Ultima\World\WorldViews\IsometricView.cs" />
+    <Compile Include="Ultima\World\Maps\MapTile.cs" />
+    <Compile Include="Ultima\World\Input\MouseOverList.cs" />
+    <Compile Include="Ultima\UI\LoginGumps\CharacterListGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\ChatControl.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\ContainerGump.cs" />
+    <Compile Include="Ultima\UI\LoginGumps\CreateCharSkillsGump.cs" />
+    <Compile Include="Ultima\UI\LoginGumps\CreateCharAppearanceGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\DebugGump.cs" />
+    <Compile Include="Ultima\UI\LoginGumps\LoginStatusGump.cs" />
+    <Compile Include="Ultima\UI\LoginGumps\LoginGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\MiniMapGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\SkillsGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\StatusGump.cs" />
+    <Compile Include="Ultima\UI\Controls\ExpandableScroll.cs" />
+    <Compile Include="Ultima\UI\MsgBoxGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\PaperDollGump.cs" />
+    <Compile Include="Ultima\UI\LoginGumps\SelectServerGump.cs" />
+    <Compile Include="Ultima\UI\WorldGumps\TopMenuGump.cs" />
+    <Compile Include="Core\UI\AControl.cs" />
+    <Compile Include="Core\Graphics\SpriteBatchUI.cs" />
+    <Compile Include="Ultima\UI\Gump.cs" />
+    <Compile Include="Ultima\UI\Controls\Button.cs" />
+    <Compile Include="Ultima\UI\Controls\CheckerTrans.cs" />
+    <Compile Include="Ultima\UI\Controls\ColorPicker.cs" />
+    <Compile Include="Ultima\UI\Controls\CroppedText.cs" />
+    <Compile Include="Ultima\UI\Controls\DropDownList.cs" />
+    <Compile Include="Ultima\UI\Controls\ItemGumplingPaperdoll.cs" />
+    <Compile Include="Ultima\UI\Controls\ItemGumpling.cs" />
+    <Compile Include="Ultima\UI\Controls\PaperdollLargeUninteractable.cs" />
+    <Compile Include="Ultima\UI\Controls\PaperDollInteractable.cs" />
+    <Compile Include="Ultima\UI\Controls\ScrollBar.cs" />
+    <Compile Include="Ultima\UI\Controls\GumpPic.cs" />
+    <Compile Include="Ultima\UI\Controls\GumpPicContainer.cs" />
+    <Compile Include="Ultima\UI\Controls\GumpPicTiled.cs" />
+    <Compile Include="Ultima\UI\Controls\HtmlGumpling.cs" />
+    <Compile Include="Ultima\UI\Controls\ResizePic.cs" />
+    <Compile Include="Ultima\UI\Controls\HSliderBar.cs" />
+    <Compile Include="Ultima\UI\Controls\TextEntry.cs" />
+    <Compile Include="Ultima\UI\Controls\TextLabel.cs" />
+    <Compile Include="Ultima\UI\Controls\TextLabelAscii.cs" />
+    <Compile Include="Ultima\UI\Controls\TextLabelAsciiCropped.cs" />
+    <Compile Include="Ultima\UI\Controls\TilePic.cs" />
+    <Compile Include="Core\UI\UserInterfaceService.cs" />
+    <Compile Include="Ultima\Resources\TexmapResource.cs" />
+    <Compile Include="Ultima\Resources\TileData.cs" />
+    <Compile Include="Ultima\Resources\TileMatrixDataPatch.cs" />
+    <Compile Include="Core\Network\NetworkClient.cs" />
+    <Compile Include="Core\Network\Compression\HuffmanDecompression.cs" />
+    <Compile Include="Core\Network\Compression\ZlibDecompression.cs" />
+    <Compile Include="Core\Network\IRecvPacket.cs" />
+    <Compile Include="Core\Network\ISendPacket.cs" />
+    <Compile Include="Core\Network\IO\PacketReader.cs" />
+    <Compile Include="Core\Network\IO\PacketWriter.cs" />
+    <Compile Include="Core\Network\NetworkException.cs" />
+    <Compile Include="Core\Network\PacketHandler.cs" />
+    <Compile Include="Core\Network\QueuedPacket.cs" />
+    <Compile Include="Core\Network\SocketState.cs" />
+    <Compile Include="Ultima\Login\States\AState.cs" />
+    <Compile Include="Ultima\Login\States\StateManager.cs" />
+    <Compile Include="Ultima\Login\States\LoginState.cs" />
+    <Compile Include="Ultima\Serial.cs" />
+    <Compile Include="Ultima\World\WorldViews\MiniMapChunk.cs" />
+    <Compile Include="Ultima\World\WorldViews\MiniMapTexture.cs" />
+    <Compile Include="Ultima\World\Maps\Map.cs" />
+    <Compile Include="Core\Graphics\SpriteBatch3D.cs" />
+    <Compile Include="Core\Graphics\VertexPositionNormalTextureHue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ultima\Resources\AnimationResource.cs" />
+    <Compile Include="Ultima\Resources\HueData.cs" />
+    <Compile Include="Ultima\IO\FileIndexEntry5D.cs" />
+    <Compile Include="Ultima\World\Input\WorldCursor.cs" />
+    <Compile Include="Ultima\World\WorldViews\OverheadsView.cs" />
+    <Compile Include="Ultima\World\WorldView.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="Ultima\World\WorldModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>c4d0357f-85dd-4418-aba4-7c7875bb3129</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 3.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Content\UltimaXNAContent.contentproj">
+      <Project>{C4D0357F-85DD-4418-ABA4-7C7875BB3129}</Project>
+      <Name>UltimaXNAContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\credits.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zlib32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\bodytable.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\containers.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ultima\IO\Fonts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
